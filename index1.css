@@ -1,0 +1,81 @@
+nav ul{
+    border-style:solid;
+    padding:10px;
+    border-width: 2px;
+    border-color: mediumvioletred;
+    border-radius: 10px;
+    text-align: center;
+    background-color:white;
+}
+
+nav ul li{list-style-type: none;
+display: inline;
+margin-right:10px;
+margin-left:10px;
+}
+body {
+  background-image: 
+   linear-gradient(rgba(255, 255, 255, 0.3)),
+   url(https://images.pexels.com/photos/109629/pexels-photo-109629.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: cover;        
+  background-position: center;   
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+  font-size: 25px; 
+  
+
+}
+.body{
+    animation: scrolling linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+@keyframes scrolling{
+    from{ 
+        opacity: 0;
+        transform:translateX (-150px) ;
+
+    }
+    to{
+      opacity:1;
+      scale:1;
+
+    }
+}
+nav ul li:hover{
+animation-name:glowup;
+animation-duration: 2s;
+animation-iteration-count:initial;
+animation-delay: 1ms;
+animation-timing-function: ease-in;
+animation-play-state: none;
+animation-direction: normal;
+animation-fill-mode: forwards;
+}
+@keyframes glowup{
+    50%{text-shadow: 0px 0px 50px blue;}}
+.img {height: 300px;
+width:500px;
+margin-right: 20px;
+margin-left: 20px;
+margin-top: 30px;
+margin-bottom: 30px;
+padding: 20px;
+float: right;}
+
+.img1{height: 300px;
+width: 500px;
+margin-right: 20px;
+margin-left: 20px;
+margin-top: 30px;
+margin-bottom: 30px;
+padding: 20px;
+float: left;}
+div{padding: 20px;
+}
+a iframe{margin-left: 400px;}
+  
+h1 {
+    text-decoration: underline;
+}
+
